@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Doc</title>
+</head>
+
+<body>
+{% extends 'base.html' %} // jinja coding style
+{% block content %}
+    <b>Hello Buddy, Hows things are going??</b><br><br>
+    <b2>Calculator</b2><br>
+    <form action="add">
+        <h1><b>ADDITION:</b></h1>
+        Enter 1st num : <input type="text" name="num1"><br>
+        Enter 2nd num : <input type="text" name="num2"><br>
+        <input type="submit">
+    </form>
+    <form action="subtract" method="post">
+        <h1><b>SUBTRACT:</b></h1>
+        {% csrf_token %} <!-- Cross-site request forgery(CSRF) token for securities-->
+        Enter 1st num : <input type="text" name="num1"><br>
+        Enter 2nd num : <input type="text" name="num2"><br>
+        <input type="submit">
+    </form>
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result page</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<p> <b> Result: </b> {{ result }}</p>
+    <form action="back">
+        <br>Want to back to home....click on back button bellow<br>
+        <input name="Back" type="submit">
+    </form>
+{% endblock %}
+</body>
+</html>

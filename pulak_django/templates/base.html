@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BASE HTML PAGE</title>
+</head>
+<body bgcolor=#7fff00>
+    {% block content %}
+    <a href="https://docs.djangoproject.com/en/2.2/">django documentation</a>
+    Email: <a href={{ mail }}>
+    {{ mail }}</a>.
+    {% endblock %}
+</body>
+</html>
